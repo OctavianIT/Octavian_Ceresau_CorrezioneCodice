@@ -1,0 +1,50 @@
+import datetime
+
+def assistente_virtuale():
+	comando = input("Fammi una domanda")
+
+	if comando == "Qual è la data di oggi?":
+		oggi = datetime.date.today()
+		risposta0 = ("La data di oggi è" + oggi.strftime("%d/%m/%Y"))
+		print(risposta0)
+
+	elif comando == "Che ore sono?":
+		ora_attuale = datetime.datetime.now()
+		risposta1 = ("L'ora attuale è" + ora_attuale.strftime("%H:%M"))
+		print(risposta1)
+		
+	elif comando == "Come ti chiami?":
+		risposta2 = "Mi chiamo Assistente Virtuale"
+		print(risposta2)	
+	
+	else:
+		risposta3 = "Non ho capito la tua domanda."
+		print(risposta3)
+	
+	
+	
+while True:
+	
+	if assistente_virtuale() != "esci:
+	continue
+
+	if assistente_virtuale() == "esci":
+	break
+	
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+----------------------------
+		
+Riga 5) è obbligatorio utilizzare datetime per eseguire un commando del modulo a meno che non si importi date da datetime con: from datetime import date
+
